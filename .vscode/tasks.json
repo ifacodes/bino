@@ -9,13 +9,17 @@
         "-std=c++17",
         "-stdlib=libc++",
         "-g",
-        "*.cpp",
+        "src/glad.c",
+        "src/*.cpp",
         "-o",
         "main",
         "-D_THREAD_SAFE",
         "-I/opt/homebrew/include/SDL2",
         "-L/opt/homebrew/lib",
         "-lSDL2",
+        "-ldl",
+        "-framework",
+        "OpenGL",
         "--debug"
       ],
       "options": {
